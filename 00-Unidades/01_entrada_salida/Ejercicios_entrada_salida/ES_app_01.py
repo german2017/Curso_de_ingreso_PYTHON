@@ -14,7 +14,7 @@ Enunciado:
 Al presionar el  botón, se debe mostrar un mensaje como el siguiente "Esto no anda, funciona".
 '''
 
-class App(customtkinter.CTk):
+class App(customtkinter.CTk):#indentacion
 
     def __init__(self):
         super().__init__()
@@ -26,7 +26,9 @@ class App(customtkinter.CTk):
         self.btn_mostrar.grid(row=2, pady=20, columnspan=2, sticky="nsew")
 
     def btn_mostrar_on_click(self):
-        pass
+        alert("titulo", "Esto no anda, funciona")
+        
+    
 
 
 if __name__ == "__main__":
